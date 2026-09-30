@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ficha de Resumo Semanal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 0;
+            color: #d1d5db;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .nivel {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .nivel label {
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .prioridade {
+            margin: 12px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #111827;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+
+            .nivel {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Ficha de Resumo Semanal</h1>
+    <p>Central de Estudo — Acompanhamento dos estudos universitários</p>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>📅 Informações da Semana</h2>
+
+        <label>Semana</label>
+        <input type="text"
+               placeholder="____ / ____ / ______ a ____ / ____ / ______">
+
+        <label>Objetivo da Semana</label>
+        <textarea
+            placeholder="Qual é o principal objetivo desta semana?"></textarea>
+    </section>
+
+
+    <section class="card">
+        <h2>1. 📊 Métodos Quantitativos</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Conceitos/Fórmulas Importantes</label>
+        <textarea></textarea>
+
+        <label>Exercícios que ainda preciso praticar</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="mq"> Fraco</label>
+            <label><input type="radio" name="mq"> Razoável</label>
+            <label><input type="radio" name="mq"> Bom</label>
+            <label><input type="radio" name="mq"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>2. 🏛️ Política Tributária e Orçamental</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Ideias Principais</label>
+        <textarea></textarea>
+
+        <label>Dúvidas</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="pto"> Fraco</label>
+            <label><input type="radio" name="pto"> Razoável</label>
+            <label><input type="radio" name="pto"> Bom</label>
+            <label><input type="radio" name="pto"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>3. ⚖️ Procedimento Administrativo</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Conceitos-Chave</label>
+        <textarea></textarea>
+
+        <label>Dúvidas</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="pa"> Fraco</label>
+            <label><input type="radio" name="pa"> Razoável</label>
+            <label><input type="radio" name="pa"> Bom</label>
+            <label><input type="radio" name="pa"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>4. 📚 Ciências da Administração</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Principais Ideias</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="ca"> Fraco</label>
+            <label><input type="radio" name="ca"> Razoável</label>
+            <label><input type="radio" name="ca"> Bom</label>
+            <label><input type="radio" name="ca"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>5. ⭐ Gestão da Qualidade na Prestação de Serviços Públicos</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Conceitos Importantes</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="gq"> Fraco</label>
+            <label><input type="radio" name="gq"> Razoável</label>
+            <label><input type="radio" name="gq"> Bom</label>
+            <label><input type="radio" name="gq"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>6. 💰 Cálculo e Instrumentos Financeiros</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Fórmulas e Métodos Importantes</label>
+        <textarea></textarea>
+
+        <label>Exercícios a Rever</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="cf"> Fraco</label>
+            <label><input type="radio" name="cf"> Razoável</label>
+            <label><input type="radio" name="cf"> Bom</label>
+            <label><input type="radio" name="cf"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>7. 🧠 Teorias e Modelos de Administração Pública</h2>
+
+        <label>Tema(s) abordado(s)</label>
+        <textarea></textarea>
+
+        <label>Teorias/Autores Estudados</label>
+        <textarea></textarea>
+
+        <label>Nível de compreensão</label>
+
+        <div class="nivel">
+            <label><input type="radio" name="tmap"> Fraco</label>
+            <label><input type="radio" name="tmap"> Razoável</label>
+            <label><input type="radio" name="tmap"> Bom</label>
+            <label><input type="radio" name="tmap"> Excelente</label>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>📈 Balanço da Semana</h2>
+
+        <label>O que aprendi melhor?</label>
+        <textarea></textarea>
+
+        <label>O que preciso de reforçar?</label>
+        <textarea></textarea>
+
+        <label>Prioridades para a próxima semana</label>
+
+        <div class="prioridade">
+            <input type="checkbox">
+            Fazer mais exercícios de Métodos Quantitativos
+        </div>
+
+        <div class="prioridade">
+            <input type="checkbox">
+            Fazer mais exercícios de Cálculo Financeiro
+        </div>
+
+        <div class="prioridade">
+            <input type="checkbox">
+            Rever conceitos teóricos
+        </div>
+
+        <div class="prioridade">
+            <input type="checkbox">
+            Esclarecer dúvidas com o professor
+        </div>
+
+        <div class="prioridade">
+            <input type="checkbox">
+            Avançar leituras obrigatórias
+        </div>
+
+        <div class="prioridade">
+            <input type="checkbox">
+            Preparar trabalhos académicos
+        </div>
+
+        <label>Outro</label>
+        <input type="text">
+    </section>
+
+
+    <button type="button">
+        💾 Guardar Resumo Semanal
+    </button>
+
+</main>
+
+<footer>
+    Central de Estudo © 2026
+</footer>
+
+</body>
+</html>
